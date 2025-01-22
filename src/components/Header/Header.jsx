@@ -1,13 +1,11 @@
 import React from 'react';
-// import './Header.scss';
+
 
 const Header = () => {
   return (
     <header id="header">
       <section id="header__content">
-        <article className="foto">
-          <img src="/images/RubenCastro.png" alt="Mi Foto" />
-        </article>
+        <img src="/images/RubenCastro.png" alt="Mi Foto" className="foto" />
         <article className="presentacion">
           <h1>Rubén Castro</h1>
           <p>Desarrollador Web Full Stack</p>
