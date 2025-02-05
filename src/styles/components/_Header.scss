@@ -1,12 +1,88 @@
+@import "../utils/variables.scss";
 
-.foto {
-    width: 50px;
-    height: auto;
-    border-radius: 30%; 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $bg-light;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  transition: background 0.3s;
+  box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
+  margin: 0; /* Elimina márgenes adicionales */
+  left: 0;
+  right: 0; /* Evita que se desborde a la derecha */
+
+  .header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: $text-light;
   }
 
-#header__content {
-    display:flex;
+  .header__buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    position: relative;
+  }
 
+  .header__toggle-mode,
+  .header__menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+  }
+
+  .header__toggle-mode {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .header__menu-button {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }
 
+// 🌙 Modo oscuro
+.dark {
+  .header {
+    background-color: $bg-dark;
+
+    .header__logo {
+      color: $text-dark;
+    }
+
+    .header__toggle-mode {
+      background-color: #444;
+    }
+  }
+}
+
+// Estilos del botón de toggle de modo oscuro
+.header__toggle-mode {
+  background-color: transparent;
+  border: none;
+  padding: 8px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header__toggle-mode:hover {
+  background-color: #f0f0f0;
+}
