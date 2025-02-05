@@ -2,6 +2,8 @@
 
 ¡Este es mi portfolio personal! Este sitio web está en proceso de desarrollo y contiene detalles sobre mis habilidades, proyectos y experiencia y formación. Aquí podrás ver una muestra de mi trabajo y mis habilidades como desarrollador full stack.
 
+[😊 Accede aquí a mi portfolio 🚀](https://rubencastrodev.netlify.app/)
+
 ---
 
 ## 🚀 Características en construcción
