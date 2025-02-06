@@ -1,28 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState, useContext } from "react";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import Nav from "./Nav"; 
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "dark"
-  );
+  const { darkMode, setDarkMode } = useContext(ThemeContext); 
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [darkMode]);
 
   return (
     <header className="header">
       <h1 className="headerName">RUBÉN CASTRO</h1>
 
-      <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} darkMode={darkMode}/>
+      <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
       {/* Botones de Modo Oscuro y Menú Hamburguesa */}
       <div className="header_buttons">
