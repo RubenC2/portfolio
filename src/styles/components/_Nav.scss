@@ -2,7 +2,7 @@
 
 .nav {
     display: flex;
-    gap: 24px; /* Usando px */
+    gap: 24px; 
     margin: 0;
     padding: 0;
   
@@ -11,10 +11,10 @@
     }
   }
   
-  .nav__link {
+  .nav_link {
     color: #333333;
     text-decoration: none;
-    font-size: 16px; /* Usando px */
+    font-size: 16px; 
     transition: color 0.3s;
   
     &:hover {
@@ -25,12 +25,12 @@
   // 🌙 Modo oscuro
 .dark {
     .nav {
-      background-color: #333333; /* Fondo oscuro para el nav */
-      .nav__link {
-        color: $bg-light; /* Texto blanco en modo oscuro */
+      background-color: #333333; 
+      .nav_link {
+        color: $bg-light; 
       }
-      .nav__link:hover {
-        color: $primary-color; /* Color del enlace al hacer hover en modo oscuro */
+      .nav_link:hover {
+        color: $primary-color; 
       }
     }
   }
@@ -38,7 +38,7 @@
   // 📱 Menú Móvil (Se muestra cuando se abre)
   .nav--open {
     position: absolute;
-    top: 64px; /* Ajustado a px */
+    top: 64px;
     left: 0;
     width: 100%;
     background: $bg-light;
@@ -50,7 +50,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   
     @media (min-width: 768px) {
-      display: flex !important; /* Asegura que en escritorio se mantenga siempre visible */
+      display: flex !important; 
       flex-direction: row;
       position: static;
       background: transparent;
