@@ -20,18 +20,17 @@ const Header = () => {
 
   return (
     <header className="header">
-      <h1 className="header__logo">RUBÉN CASTRO</h1>
+      <h1 className="headerName">RUBÉN CASTRO</h1>
 
-      {/* Componente de Navegación */}
       <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} darkMode={darkMode}/>
 
       {/* Botones de Modo Oscuro y Menú Hamburguesa */}
-      <div className="header__buttons">
-        <button onClick={() => setDarkMode(!darkMode)} className="header__toggle-mode">
+      <div className="header_buttons">
+        <button onClick={() => setDarkMode(!darkMode)} className="header_toggle-mode">
           {darkMode ? <Sun className="icon" /> : <Moon className="icon" />}
         </button>
 
-        <button className="header__menu-button" onClick={() => setMenuOpen(!menuOpen)}>
+        <button className="header_menu-button" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
