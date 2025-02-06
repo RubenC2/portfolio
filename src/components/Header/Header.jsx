@@ -14,8 +14,7 @@ const Header = () => {
 
       <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-      {/* Botones de Modo Oscuro y Menú Hamburguesa */}
-      <div className="header_buttons">
+      <section className="header_buttons">
         <button onClick={() => setDarkMode(!darkMode)} className="header_toggle-mode">
           {darkMode ? <Sun className="icon" /> : <Moon className="icon" />}
         </button>
@@ -23,7 +22,7 @@ const Header = () => {
         <button className="header_menu-button" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
-      </div>
+      </section>
     </header>
   );
 };
