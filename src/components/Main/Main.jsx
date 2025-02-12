@@ -1,22 +1,11 @@
 import React from "react";
+import Hero from "./Hero/Hero"; 
 
 const Main = () => {
-  return <div>
+  return <section>
+        <Hero/>
 
-  {/* <img src="/images/RubenCastro.png" alt="Mi Foto" className="foto" />
-        <article className="presentacion">
-        <h2>Desarrollador Web Full Stack</h2>
-        </article>
-        <a href="/CVRubenCastroDev.pdf" className="download-cv">Descargar CV</a>
-        <a
-          href="https://www.linkedin.com/in/rubencastrodev/"
-          className="linkedin-button"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Mi LinkedIn
-        </a> */}
-        </div>
+        </section>
 };
 
 export default Main;
