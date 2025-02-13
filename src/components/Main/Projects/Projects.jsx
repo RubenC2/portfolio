@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../../context/ThemeContext';
 
 const Projects = () => {
-  return <div>Projects</div>;
+  const { darkMode } = useContext(ThemeContext);
+
+  return (
+    <section id="projects" className={`projects ${darkMode ? 'projects--dark' : 'projects--light'}`}>
+      <article className="projects_content">
+        <h2 className="projects_title">Mis proyectos</h2>
+        </article>
+    </section>
+  )
 };
 
 export default Projects;
