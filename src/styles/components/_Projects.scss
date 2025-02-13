@@ -1,19 +1,14 @@
 @import "../utils/variables.scss";
 
-.about {
+.projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 35px;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
-    border-radius: 10px;
-    border: 2px solid $tertiary-color;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     background-color: $bg-light;
-    margin: 40px auto;
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
 
     &--light {
         background-color: $bg-light;
