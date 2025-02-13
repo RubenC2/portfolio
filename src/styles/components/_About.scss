@@ -1,0 +1,37 @@
+@import "../utils/variables.scss";
+
+.about {
+    border-color: $tertiary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+
+    &--light {
+        background-color: $bg-light;
+        color: $text-light;
+    }
+
+    &--dark {
+        background-color: $bg-dark;
+        color: $text-dark;
+    }
+
+    &_content {
+        max-width: 800px;
+        margin-bottom: 32px;
+    }
+
+    &_title {
+        font-family: $secondary-font;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    &_text {
+        font-family: $secondary-font;
+        text-align: center;
+    }
+}
