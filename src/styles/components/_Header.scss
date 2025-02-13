@@ -1,10 +1,18 @@
 @import "../utils/variables.scss";
 
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw; 
+  max-width: 100%; 
   background-color: $bg-light;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 1px 24px;
@@ -13,15 +21,18 @@
   align-items: center;
   z-index: 50;
   transition: background 0.3s;
-  box-sizing: border-box; 
-  margin: 0; 
-  left: 0;
-  right: 0; 
+  box-sizing: border-box;
 
   .headerName {
     font-size: 24px;
     font-weight: bold;
     color: $text-light;
+    background: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $text-light;
+    }
   }
 
   .header_buttons {
@@ -43,6 +54,11 @@
     height: 40px;
     border-radius: 50%;
     background-color: #e0e0e0;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      color: $text-light;
+    }
   }
 
   .header_toggle-mode {
@@ -66,6 +82,7 @@
 
     .headerName {
       color: $text-dark;
+      background: none;
     }
 
     .header_toggle-mode {
@@ -74,15 +91,90 @@
   }
 }
 
-// Estilos del botón de toggle de modo oscuro
-.header_toggle-mode {
-  background-color: transparent;
-  border: none;
-  padding: 8px; 
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
-.header_toggle-mode:hover {
-  background-color: #f0f0f0;
-}
+// .header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   background-color: $bg-light;
+//   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+//   padding: 1px 24px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   z-index: 50;
+//   transition: background 0.3s;
+//   box-sizing: border-box; 
+//   margin: 0; 
+//   left: 0;
+//   right: 0; 
+
+//   .headerName {
+//     font-size: 24px;
+//     font-weight: bold;
+//     color: $text-light;
+//   }
+
+//   .header_buttons {
+//     display: flex;
+//     gap: 8px;
+//     align-items: center;
+//     position: relative;
+//   }
+
+//   .header_toggle-mode,
+//   .header_menu-button {
+//     background: none;
+//     border: none;
+//     cursor: pointer;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 50%;
+//     background-color: #e0e0e0;
+//   }
+
+//   .header_toggle-mode {
+//     svg {
+//       width: 24px;
+//       height: 24px;
+//     }
+//   }
+
+//   .header_menu-button {
+//     @media (min-width: 768px) {
+//       display: none;
+//     }
+//   }
+// }
+
+// // 🌙 Modo oscuro
+// .dark {
+//   .header {
+//     background-color: $bg-dark;
+
+//     .headerName {
+//       color: $text-dark;
+//     }
+
+//     .header_toggle-mode {
+//       background-color: #444;
+//     }
+//   }
+// }
+
+// // Estilos del botón de toggle de modo oscuro
+// .header_toggle-mode {
+//   background-color: transparent;
+//   border: none;
+//   padding: 8px; 
+//   cursor: pointer;
+//   transition: background-color 0.3s;
+// }
+
+// .header_toggle-mode:hover {
+//   background-color: #f0f0f0;
+// }

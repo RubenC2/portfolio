@@ -1,0 +1,29 @@
+@import "../utils/variables.scss";
+
+.footer {
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  bottom: 0;
+
+  &--light {
+    background-color: $bg-light;
+    color: $text-light;
+  }
+
+  &--dark {
+    background-color: $bg-dark;
+    color: $text-dark;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
