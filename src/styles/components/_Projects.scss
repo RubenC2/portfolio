@@ -21,9 +21,12 @@
     }
 
     &_content {
-        max-width: 800px;
-        margin-bottom: 32px;
-        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+
     }
 
     &_title {
@@ -44,7 +47,8 @@
         padding: 20px;
 
         &_content {
-            padding: 0;
+            flex-direction: column; 
+            gap: 20px;  
         }
 
         &_title {
