@@ -12,6 +12,8 @@ const About = () => {
           Con trayectoria en el ámbito educativo y social, he reorientado mi carrera profesional hacia el desarrollo web, 
           estudiando el bootcamp intensivo e inmersivo full time de Desarrollo Web Full Stack, en The Bridge, impulsado por el deseo de aprender y afrontar nuevos retos. 
           Siempre en fase de crecimiento técnico, mi entusiasmo y compromiso me permiten avanzar rápidamente en este campo. 
+          <br>
+          </br>
           Además, cuento con soft skills claves, como la empatía, las habilidades sociales y comunicativas, la escucha activa y 
           el trabajo en equipo, lo que contribuye a crear un ambiente de trabajo positivo y productivo. 
           Estoy en búsqueda de nuevas oportunidades para formar parte de proyectos innovadores.
