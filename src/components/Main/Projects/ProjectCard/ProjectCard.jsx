@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../../../context/ThemeContext';
+import { IoOpenOutline } from "react-icons/io5";
 
 
 const ProjectCard = ({ project }) => {
@@ -18,8 +19,8 @@ const ProjectCard = ({ project }) => {
         ))}
       </article>
       <article className="projectCard_links">
-        <a href={project.liveLink} target="_blank" rel="noopener noreferrer">Ver online</a>
-        <a href={project.repoLink} target="_blank" rel="noopener noreferrer">Acceso al repositorio</a>
+        <a href={project.liveLink} target="_blank" rel="noopener noreferrer">Ver online<IoOpenOutline /></a>
+        <a href={project.repoLink} target="_blank" rel="noopener noreferrer">Acceso al repositorio<IoOpenOutline /></a>
       </article>
     </section>
   );

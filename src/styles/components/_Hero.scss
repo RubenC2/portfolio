@@ -39,7 +39,7 @@
   .foto {
     max-width: 50%;
     height: auto;
-    border-radius: 30%;
+    border-radius: 10px;
     margin-top: 16px; 
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
   }
@@ -48,6 +48,7 @@
     display: flex;
     flex-direction: row;
     gap: 16px;  
+    flex-wrap: wrap;
 
     a {
       display: flex;
@@ -87,111 +88,3 @@
     }
   }
 }
-
-// .hero {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding: 60px;  
-//   text-align: center;
-//   transition: background-color 0.3s, color 0.3s;
-  
-//   &--light {
-//     background-color: $bg-light;
-//     color: $text-light;
-//   }
-
-//   &--dark {
-//     background-color: $bg-dark;
-//     color: $text-dark;
-//   }
-
-//   &_content {
-//     max-width: 800px;
-//     margin-bottom: 32px; 
-    
-//     .hero_title {
-//       font-size: 32px;  
-//       margin-bottom: 8px;  
-//     }
-
-//     .hero_subtitle {
-//     font-family: $secondary-font;
-//       font-size: 24px;  
-//       margin-bottom: 16px;  
-//     }
-//   }
-
-//   .foto {
-//     max-width: 50%;
-//     height: auto;
-//     border-radius: 30%;
-//     margin-top: 16px; 
-//     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
-//   }
-
-//   .presentacion {
-//     display: flex;
-//     flex-direction: row;
-//     gap: 16px;  
-
-//     a {
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       gap: 8px;  
-//       background-color: $primary-color;
-//       color: #fff;
-//       padding: 8px 24px;
-//       border-radius: 5px;
-//       text-decoration: none;
-//       transition: background-color 0.3s;
-//       font-size: 16px;
-      
-//       svg {
-//         width: 20px;
-//         height: 20px;
-//       }
-
-//     .download-cv {
-//       background-color: $primary-color;
-//       color: #fff;
-//       padding: 8px 24px;  
-//       border-radius: 5px;   
-//       transition: background-color 0.3s;
-      
-//       &:hover {
-//         background-color: $tertiary-color;
-//         // background-color: darken($primary-color, 10%);
-
-//       }
-//     }
-
-//     .linkedin-button {
-//       color: #fff;
-//       padding: 8px 24px;  
-//       border-radius: 5px;
-//       text-decoration: none;
-//       transition: background-color 0.3s;
-      
-//       &:hover {
-//         background-color: $tertiary-color;
-
-//       }
-//     }
-//     .github-button {
-//       color: #fff;
-//       padding: 8px 24px;  
-//       border-radius: 5px;
-//       text-decoration: none;
-//       transition: background-color 0.3s;
-      
-//       &:hover {
-//         background-color: $tertiary-color;
-
-//       }
-
-//     }
-//     }
-//   }
-// }
