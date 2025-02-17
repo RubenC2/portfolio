@@ -20,7 +20,7 @@ export const projects = [
     {
         id: 3,
         title: "GoalBridge",
-        description: "Web diseñada para facilitar la búsqueda de empleo de manera efectiva y rápida. Con una interfaz intuitiva y herramientas avanzadas de filtrado, GoalBridge ayuda a encontrar las oportunidades laborales que mejor se ajustan al perfil y preferencias. La plataforma emplea bases de datos robustas para almacenar y gestionar las ofertas de empleo y la información de users, asegurando una experiencia de uso fluida y segura.",
+        description: "Aplicación diseñada para facilitar la búsqueda de empleo de manera efectiva y rápida. Con una interfaz intuitiva y herramientas avanzadas de filtrado, ayuda a encontrar las oportunidades laborales que mejor se ajustan al perfil y preferencias. La plataforma emplea bases de datos robustas para almacenar y gestionar las ofertas de empleo y la información de users, asegurando una experiencia de uso fluida y segura.",
         image: "/images/Goalbridge.png",
         techStack: ["Pug","MongoDB", "Node.js", "Express", "PostgreSQL"],
         liveLink: "https://goalbridge.onrender.com/",
