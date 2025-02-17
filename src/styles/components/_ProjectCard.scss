@@ -2,13 +2,14 @@
 
 
 .projectCard {
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: $bg-light;
     color: $text-light;
     padding: 20px;
+    border: 2px solid $white;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
@@ -37,20 +38,23 @@
     }
 
     &_title {
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 18px;
         margin-bottom: 10px;
     }
 
     &_text {
+        background-color: $white;
+        color: $secondary-color;
         font-size: 14px;
         margin-bottom: 15px;
     }
 
     &_content {
+        padding: 5px;
+        border: solid;
         display: flex;
         flex-wrap: wrap;
-        gap: 14px;
+        gap: 12px;
         justify-content: center;
         margin-bottom: 15px;
     }
@@ -74,52 +78,7 @@
         }
     }
 
-
-    // .projectCard {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     padding: 35px;
-    //     text-align: center;
-    //     transition: background-color 0.3s, color 0.3s;
-    //     border-radius: 10px;
-    //     border: 2px solid $tertiary-color;
-    //     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    //     background-color: $bg-light;
-    //     margin: 40px auto;
-    //     width: 100%;
-    //     max-width: 800px;
-
-    //     &--light {
-    //         background-color: $bg-light;
-    //         color: $text-light;
-    //     }
-
-    //     &--dark {
-    //         background-color: $bg-dark;
-    //         color: $text-dark;
-    //     }
-
-    //     &_content {
-    //         max-width: 800px;
-    //         margin-bottom: 32px;
-    //         padding: 20px;
-    //     }
-
-    //     &_title {
-    //         font-family: $secondary-font;
-    //         font-size: 24px;
-    //         margin-bottom: 16px;
-    //         font-weight: bold;
-    //     }
-
-    //     &_text {
-    //         font-family: $secondary-font;
-    //         font-size: 16px;
-    //         text-align: center;
-    //         line-height: 1.6;
-    //     }
-
+   
 
     @media (max-width: 768px) {
         padding: 20px;
